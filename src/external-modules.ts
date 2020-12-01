@@ -27,7 +27,7 @@ export function externalModules(
     devDependencies = {},
     peerDependencies = {},
     optionalDependencies = {},
-  } = require(packageJson); // eslint-disable-line @typescript-eslint/no-var-requires
+  } = require(packageJson) as Record<string, any>; // eslint-disable-line @typescript-eslint/no-var-requires
 
   const externals = new Set([
     ...builtinModules,
