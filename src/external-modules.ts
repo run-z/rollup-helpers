@@ -14,7 +14,7 @@ import * as path from 'path';
  *
  * [external]: https://rollupjs.org/guide/en/#external
  *
- * @param packageJson  Path to `package.json`. Uses the one in the working directory by default.
+ * @param packageJson - Path to `package.json`. Uses the one in the working directory by default.
  *
  * @returns A function that checks whether the module with the given id is external.
  */
