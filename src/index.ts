@@ -1,5 +1,5 @@
 /**
  * @packageDocumentation
- * @module @run-z/rollup-helpers
+ * @module Module @run-z/rollup-helpers
  */
 export * from './external-modules';

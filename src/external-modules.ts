@@ -1,7 +1,3 @@
-/**
- * @packageDocumentation
- * @module @run-z/rollup-helpers
- */
 import builtinModules from 'builtin-modules';
 import * as path from 'path';
 
