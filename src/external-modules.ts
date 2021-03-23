@@ -1,4 +1,4 @@
-import builtinModules from 'builtin-modules';
+import module from 'module';
 import * as path from 'path';
 
 /**
@@ -26,7 +26,7 @@ export function externalModules(
   } = require(packageJson) as Record<string, any>; // eslint-disable-line @typescript-eslint/no-var-requires
 
   const externals = new Set([
-    ...builtinModules,
+    ...module.builtinModules,
     ...Object.keys(dependencies),
     ...Object.keys(devDependencies),
     ...Object.keys(peerDependencies),
