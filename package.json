@@ -20,6 +20,9 @@
     "import": "./dist/rollup-helpers.js",
     "require": "./dist/rollup-helpers.cjs"
   },
+  "dependencies": {
+    "builtin-modules": "^3.2.0"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
