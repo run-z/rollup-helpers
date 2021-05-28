@@ -1,6 +1,8 @@
 import module from 'module';
 import * as path from 'path';
 
+const req = (/*#__PURE__*/ module.createRequire(process.cwd()));
+
 /**
  * Creates a function that checks whether the package is external.
  *
@@ -23,7 +25,7 @@ export function externalModules(
     devDependencies = {},
     peerDependencies = {},
     optionalDependencies = {},
-  } = require(packageJson) as Record<string, any>; // eslint-disable-line @typescript-eslint/no-var-requires
+  } = req(packageJson) as Record<string, any>; // eslint-disable-line @typescript-eslint/no-var-requires
 
   const externals = new Set([
     ...module.builtinModules,
