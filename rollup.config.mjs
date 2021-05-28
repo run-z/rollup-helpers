@@ -1,4 +1,3 @@
-import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import { builtinModules } from 'module';
 import flatDts from 'rollup-plugin-flat-dts';
@@ -11,7 +10,6 @@ export default {
     'rollup-helpers': './src/index.ts',
   },
   plugins: [
-    commonjs(),
     ts({
       typescript,
       cacheRoot: 'target/.rts2_cache',
