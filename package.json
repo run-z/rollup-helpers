@@ -48,6 +48,6 @@
     "doc:publish": "run-z doc --then gh-pages --dist target/typedoc --dotfiles",
     "lint": "run-z +z --then eslint . --ext .js,.ts",
     "test": "run-z",
-    "z": "run-z +build,+lint"
+    "z": "run-z +xms:rollup,+cmd:eslint"
   }
 }
